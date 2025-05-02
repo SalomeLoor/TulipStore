@@ -1,0 +1,77 @@
+.Acordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.Acordion h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--morado2);
+  margin: 0.5rem;
+}
+.Seccion-Acordion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: auto;
+  gap: 3rem;
+  border-radius: 3em 1em;
+}
+.Details-Summary {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1rem;
+}
+.Details-Summary details {
+  padding: .6rem;
+  background-color: var(--morado4);
+  position: relative;
+}
+.Details-Summary details[open]{
+    background-color: var(--morado4);
+    box-shadow: var(--boxShadow3);
+
+}
+.Details-Summary details p{
+    height: auto;
+    font-size: 14px;
+    padding: .5rem;
+    margin: 1rem;
+    border-left: 2px solid var(--morado2);
+    background-color: blanchedalmond;
+}
+.Details-Summary summary {
+  font-size: 18px;
+  font-weight: 700;
+  list-style: none;
+  cursor: pointer;
+  font-family: pompiere;
+}
+.Details-Summary summary::before {
+    position: absolute;
+    content: "v";
+    font-size: 1.5rem;
+    top: 10px;
+    right: 16px;
+}
+.Details-Summary details[open] summary::before {
+    -webkit-animation: rotate-emoji 0.6s ease-in-out both;
+    animation: rotate-emoji 0.6s ease-in-out both;
+}
+
+@keyframes rotate-emoji {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}

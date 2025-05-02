@@ -1,0 +1,207 @@
+.Form-Registro {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 100vh;
+  position: relative;
+  background-image: url(../assets/fondoImg.jpg);
+  position: relative;
+}
+.size-6{
+  width: 40px;
+  position: absolute;
+  bottom: 85%;
+  right: 94%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 10px var(--morado5));
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1000;
+  color: var(--brillo);
+}
+.size-6hover {
+  filter: drop-shadow(0 0 15px var(--morado2));
+}
+.size-6:active {
+  filter: drop-shadow(0 0 15px var(--morado2));
+}
+.img-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img-registro img {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0 0 10px var(--morado5));
+}
+.frase-escritura {
+   font-size: 1.5rem;
+  color: var(--brillo);
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 600px;
+  text-shadow: 0 0 8px #f9c6e7;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #f9c6e7;
+  width: fit-content;
+  animation: typing 6s steps(75, end), blink 0.8s step-end infinite;
+}
+
+.Form-Registro form {
+  width: 650px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid var(--brillo);
+  background-color: var(--morado3);
+  padding: 2rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.Form-Registro form h2 {
+  font-size: 2.5rem;
+  color: var(--morado2);
+}
+.Form-Registro form h4 {
+  color: var(--morado2);
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.input-group input {
+  width: 300px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid rebeccapurple;
+  font-family: "Federo", sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  background-color: var(--morado3);
+  color: black;
+  outline: none;
+}
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  color: var(--morado2); /* color de letra */
+  font-size: 12.5px;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--morado3);
+  padding: 0 5px;
+}
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: 0;
+  left: 15px;
+  font-weight: bold;
+  padding: 0 2px;
+  transform: translateY(-50%);
+  background-color: var(--morado3);
+  color: var(--morado2); /* color de letra */
+  font-size: 13px;
+  outline: none;
+}
+.Btn {
+  width: 300px;
+  height: 40px;
+  margin: 0.2rem;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: var(--morado2);
+  background-color: var(--morado5);
+  cursor: pointer;
+  border: 1px solid rebeccapurple;
+  transition: all 0.3s ease-in-out;
+}
+.Btn:hover {
+  background-color: var(--morado6);
+  transform: scale(0.9);
+}
+.Btn:active {
+  background-color: var(--morado6);
+  transform: scale(1);
+}
+.redes-registro {
+  /* Redes Sociales para registrarse */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.linea {
+  width: 250px;
+  border-top: 1px solid var(--morado2);
+  margin-bottom: 0.5rem;
+}
+.linea h3 {
+  width: 110px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--morado2);
+  text-align: center;
+  position: absolute;
+  top: -7px;
+  left: 29%;
+  background-color: var(--morado3);
+  padding: 0 5px;
+}
+.redes-registro button {
+  background-color: var(--morado3);
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.redes-registro button:hover {
+  transform: scale(0.9);
+}
+.redes-registro button:active {
+  transform: scale(1);
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.redes img {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 0 10px var(--morado5));
+}
+.redes img:hover {
+  filter: drop-shadow(0 0 15px var(--morado2));
+}
+.tienes-una-cuenta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--morado2);
+}

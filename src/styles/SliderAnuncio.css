@@ -1,0 +1,26 @@
+.mySwiperAnuncio {
+  width: 100%;
+  height: 100%;
+  margin-top: 8.5rem;
+}
+.myswiperslideImgs {
+  text-align: center;
+  font-size: 18px;
+  background-color: var(--rosadoLigth);
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+}
+
+.myswiperslideImgs img {
+    display: block;
+    width: 2000px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+ 
+  

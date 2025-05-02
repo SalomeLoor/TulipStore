@@ -1,0 +1,28 @@
+.TerminosYCondiciones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.6rem;
+}
+.Checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .Checkbox-container input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--morado);
+    cursor: pointer;
+  }
+  
+  .Terminos-link {
+    color: var(--morado2);
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+  }
+  
