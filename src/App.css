@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Emilys+Candy&family=Federo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pompiere&family=Ribeye&family=Sofia&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Emilys+Candy&family=Federo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pompiere&family=Ribeye&family=Rubik+Wet+Paint&family=Sofia&family=Uncial+Antiqua&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -26,7 +26,6 @@
   --boxShadow3:0 10px 10px -5px;
   --TextShadow:4px 4px black;
 }
-
 .federo-regular {
   font-family: "Federo", sans-serif;
   font-weight: 400;
@@ -49,7 +48,11 @@
   font-weight: 400;
   font-style: normal;
 }
-
+.rubik-wet-paint-regular{
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .btn {
   width: 50px;
@@ -91,4 +94,21 @@
 @keyframes blink {
   from, to { border-color: transparent; }
   50% { border-color: #f9c6e7; }
+}
+/*Animacion de bienvenida*/
+@keyframes typing1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65ch;
+  }
+}
+@keyframes blink2 {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f9c6e7;
+  }
 }

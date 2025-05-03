@@ -2,6 +2,7 @@
   background-color: var(--rosado);
   margin: 10px;
   padding: 15px;
+  position: relative;
 }
 section h2{
   font-size: 2.5rem;

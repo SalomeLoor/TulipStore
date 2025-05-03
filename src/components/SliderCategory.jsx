@@ -17,7 +17,7 @@ const SliderCategory = () => {
   return (
     <>
       <section className="slider-category">
-        <h2 className='dancing-script'>Nuestras Colecciones</h2>
+      <h2 className='dancing-script'> Nuestras Colecciones </h2>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -30,7 +30,7 @@ const SliderCategory = () => {
           {
             SliderCategoryImgs.map((item, index) => (
               <SwiperSlide className="mySwiperCategorySlide" key={index}>
-                <h3 className='pompiere-regular'>{item.title}</h3>
+                <h3 className='pompiere'>{item.title}</h3>
                 <img className='IMG' src={item.image} alt={item.title} />
               </SwiperSlide>
             ))

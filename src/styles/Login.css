@@ -1,0 +1,77 @@
+.Form-Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  height: 100vh;
+  background-image: url(../assets/fondoImg.jpg);
+  position: relative;
+}
+.size-5{
+    width: 40px;
+    position: absolute;
+    bottom: 85%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 10px var(--morado5));
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+    color: var(--brillo);
+  }
+  .size-5:hover {
+    filter: drop-shadow(0 0 15px var(--morado2));
+  }
+  .size-5:active {
+    filter: drop-shadow(0 0 15px var(--morado2));
+  }
+.img-registro-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  right: 12%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.img-registro-login img {
+  width: 300px;
+  height: auto;
+  filter: drop-shadow(0 0 10px var(--morado5));
+}
+.Form-Login form {
+  width: 650px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid var(--brillo);
+  background-color: var(--morado3);
+  padding: 2rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.Form-Login form h2 {
+  font-size: 2.5rem;
+  color: var(--morado2);
+}
+.Form-Login form h4 {
+  color: var(--morado2);
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+.linea2 h3 {
+  width: 120px;
+}
+.sesion {
+  display: flex;
+  gap: 2rem;
+}
+.btn-recuperar-contra {
+  width: 70px;
+  height: 30px;
+  font-size: 10px;
+}

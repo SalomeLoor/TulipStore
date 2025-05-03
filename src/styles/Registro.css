@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: right;
   height: 100vh;
-  position: relative;
   background-image: url(../assets/fondoImg.jpg);
   position: relative;
 }
@@ -11,7 +10,7 @@
   width: 40px;
   position: absolute;
   bottom: 85%;
-  right: 94%;
+  right: 92%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 0 10px var(--morado5));
   transition: all 0.3s ease-in-out;
@@ -19,7 +18,7 @@
   z-index: 1000;
   color: var(--brillo);
 }
-.size-6hover {
+.size-6:hover {
   filter: drop-shadow(0 0 15px var(--morado2));
 }
 .size-6:active {
@@ -56,7 +55,6 @@
   width: fit-content;
   animation: typing 6s steps(75, end), blink 0.8s step-end infinite;
 }
-
 .Form-Registro form {
   width: 650px;
   height: 610px;

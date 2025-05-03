@@ -1,0 +1,93 @@
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border: 1px solid var(--morado2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.Containaer-frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 30px; /* más altura para que no se recorte */
+  padding: 0.5rem;
+  color: #fff0f8;
+  background-color: var(--morado2);
+}
+.frase-bienvenida {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff0f8;
+  text-align: center;
+  text-shadow: 0 0 8px #f9c6e7;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #f9c6e7;
+  width: 0;
+  animation: typing1 6s steps(65, end) forwards, blink2 0.8s step-end infinite;
+}
+.Logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0.5rem;
+  background-image: url(../assets/fondoImg.jpg);
+  gap: 1rem;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.Logo h2 {
+  font-size: 20.5px;
+  text-align: center;
+  padding-top: 1.5rem;
+  /*Efecto de fondo*/
+  background: linear-gradient(45deg, #8a2be2, #d896ff, #6a0dad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  animation: glowText 3s infinite alternate ease-in-out;
+  color: var(--morado2);
+}
+#Imglogo {
+  width: 80px;
+  height: 75px;
+  margin-left: 3rem;
+  padding: 0.1rem;
+  filter: drop-shadow(0 0 10px var(--morado5));
+  cursor: pointer;
+}
+.NavBar {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.NavBar img {
+  width: 30px;
+  height: 30px;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20%;
+  padding: 0.1px;
+  /*filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.863));*/
+  filter: drop-shadow(0 0 10px var(--morado5));
+}
+.NavBar img:hover {
+  filter: drop-shadow(0 0 15px rgb(255, 255, 255));
+  transform: scale(1.2);
+}
+.NavBar img:hover {
+  transform: scale(0.9);
+}
+.NavBar img:active {
+  transform: scale(1.2);
+}

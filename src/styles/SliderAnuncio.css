@@ -1,7 +1,7 @@
 .mySwiperAnuncio {
   width: 100%;
   height: 100%;
-  margin-top: 8.5rem;
+  margin-top: 8.1rem;
 }
 .myswiperslideImgs {
   text-align: center;
@@ -16,8 +16,8 @@
 
 .myswiperslideImgs img {
     display: block;
-    width: 2000px;
-    height: 450px;
+    width: 1200px;
+    height: 470px;
     object-fit: cover;
     border-radius: 12px;
   }

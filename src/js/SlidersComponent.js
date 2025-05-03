@@ -16,7 +16,7 @@ export const SliderCategoryImgs = [
     image: blusas,
   },
   {
-    title: "Shorts & Falsdas",
+    title: "Shorts & Faldas",
     image: shorts,
   },
   {
