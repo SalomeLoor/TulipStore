@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+//conexion a la base de datos
 import supabase from "../SupaBase/supabase.config";
 
 // Crear contexto
@@ -19,22 +20,19 @@ export const AuthProvider = ({ children }) => {
       }
     });
 
-    // Escuchar cambios en autenticación
-    const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
-      if (session?.user) {
-        setUser(session.user);
-        if (event === "SIGNED_IN") {
-          navigate("/user"); // Redirige al perfil tras confirmar el email
-        }
-      } else {
-        setUser(null);
-        // Solo redirigir a /login si el usuario intenta acceder a una página protegida
-        const rutasProtegidas = ["/user"]; // Ajusta según tu app (se pueden agregar mas esto inpide que si no esta logueado o registrado no pueda aceder a estas paginas)
-        if (rutasProtegidas.includes(location.pathname)) {
-          navigate("/login");
+    const { data: authListener } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        if (session?.user) {
+          setUser(session.user);
+        } else {
+          setUser(null);
+          const rutasProtegidas = ["/user"];
+          if (rutasProtegidas.includes(location.pathname)) {
+            navigate("/login");
+          }
         }
       }
-    });
+    );
 
     return () => {
       authListener.subscription.unsubscribe();
