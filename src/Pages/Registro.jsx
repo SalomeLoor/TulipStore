@@ -29,7 +29,11 @@ const Registro = () => {
       const { data, error } = await supabase.auth.signUp({
         email: email,
         password: password,
+        options: {
+          emailRedirectTo: 'https://tulipanstore.netlify.app/user' // usa la URL de tu app
+        }
       });
+      
 
       if (error) {
         throw error;
